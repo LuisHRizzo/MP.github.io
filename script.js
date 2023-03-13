@@ -176,6 +176,8 @@ if (searchTerm === "") {
     
     if (filteredProducts.length === 0) {
     filteredProducts = filterProductsByCategory(products, searchTerm);
+    } else{
+        filteredProducts = filterProductsByName(products, searchTerm);
     }
     
     // Mostrar los productos filtrados en la página
