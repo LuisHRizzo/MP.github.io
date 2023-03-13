@@ -37,15 +37,16 @@
                 </form>
             </div>
             <div class="dropdown col-md-6">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle" id="navbarDropdownMenuLink" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Categorias
                 </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Ropa</a></li>
-                  <li><a class="dropdown-item" href="#">Carteras</a></li>
+                <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#" data-category="ropa">Ropa</a></li>
+                  <li><a class="dropdown-item" href="#" data-category="carteras">Carteras</a></li>
                 </ul>
               </div>
         </div>
+        <div id="checkboxes"></div>
 
         <div class="row mt-4" id="product-list"></div>
     </div>
@@ -59,3 +60,4 @@
     <script src="./script.js"></script>
 
 </body>
+</html>
