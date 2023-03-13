@@ -12,41 +12,18 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-ligth bg-body-tertiary">
-        <a class="navbar-brand" href="#"> <img src="./assets/images/mercadoPersaLogo.png" alt="" style="width: 150px;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-            </ul>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="./assets/images/mercadoPersaLogo.png" alt="" width="60"></a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
         </div>
-    </nav>
+      </nav>
 
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Buscar producto..." />
-                    </div>
-                </form>
-            </div>
-            <div class="dropdown col-md-6">
-                <button class="btn btn-secondary dropdown-toggle" id="navbarDropdownMenuLink" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Categorias
-                </button>
-                <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#" data-category="ropa">Ropa</a></li>
-                  <li><a class="dropdown-item" href="#" data-category="carteras">Carteras</a></li>
-                </ul>
-              </div>
-        </div>
-        <div id="checkboxes"></div>
+
 
         <div class="row mt-4" id="product-list"></div>
     </div>
