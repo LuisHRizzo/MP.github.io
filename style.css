@@ -57,11 +57,11 @@ input[type=search]:focus{
 }
 .card{
     margin: 10px auto;
-    max-width: 30em;
+    max-width: 40em;
     border: 2px solid black;
 }
 .card-img-top{
-    max-height: 40vh;
+    max-height: 50vh;
     
 }
 
